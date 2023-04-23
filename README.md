@@ -25,6 +25,6 @@ For any questions or support, please reach out to katzmansof@gmail.com .
 
 ### Project Status / Personal Notes 
 To Do: 
-- Create 5 Functional Components 
+✓ Create 5 Functional Components 
 - Client Side Routing - 3 Minimum Links
 - Set up One Post Request (send new projects to storage database)
