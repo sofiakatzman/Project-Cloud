@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 function NavBar({ onChangePage }){
 
     function handleLinkClick(e) {
-        e.preventDefault()
-        onChangePage(e.target.pathname)
+            onChangePage(e.target.pathname)
+    
     }
-
-
-return(
-    <nav className = "links"> 
-            <a onClick={handleLinkClick} href="/">home</a>
-            <a onClick={handleLinkClick} href="/projects">my projects</a>
-            <a onClick={handleLinkClick} href="/create">add a project</a>
-            <a onClick={handleLinkClick} href="/inspo">view inspo</a>
-    </nav>
+ 
+    return(
+        <nav className="links"> 
+            <Link to="/" onClick={handleLinkClick}>home</Link>
+            <Link to="/projects" onClick={handleLinkClick}>my cloud</Link>
+            <Link to="/create" onClick={handleLinkClick}>new project</Link>
+            <Link to="/inspo" onClick={handleLinkClick}>view inspo</Link>
+        </nav>
+    
     
 )}
 

@@ -20,6 +20,11 @@ background-color: white
   
 }
 
+a {
+  color: #76939b;
+  text-decoration:none
+}
+
 .projects {
 text-align: left;
 

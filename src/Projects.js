@@ -3,17 +3,12 @@ import React from 'react'
 
 function Projects(){
 
-fetch("http://localhost:8000/projects")
-.then(r => r.json())
-.then(data => console.log(data))
-
-
-
-
-
+    console.log("you've reached Projects")
 
 return(
-    <div>
+    <div> <h1>Welcome to your Projects Cloud! </h1>
+    <p>Here are the projects you've saved: 
+    </p>
         <div className = "card">
             <h3>Project Name</h3>
             <p>Project Description will go here ...</p>

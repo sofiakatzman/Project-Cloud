@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Create(){
+    console.log("you've reached Create")
     return(
         <div className = "card">
             <form> <h1>Let's Add a Project!</h1>
