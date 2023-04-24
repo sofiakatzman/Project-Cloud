@@ -3,6 +3,15 @@ import react from 'react'
 
 function Projects(){
 
+fetch("http://localhost:8000/projects")
+.then(r => r.json())
+.then(data => console.log(data))
+
+
+
+
+
+
 return(
     <div>
         <div className = "projects">
@@ -10,8 +19,7 @@ return(
             <p>Project Description will go here ...</p>
             <small>API Name : Clickable Link</small><br></br>
             <button>delete</button>
-            <button>💡</button>
-        </div>
+                   </div>
     </div>
 )
 
