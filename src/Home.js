@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Projects from './Projects'
 
 function Home(){
@@ -6,7 +7,7 @@ function Home(){
 return(
     <div>
         <h1>Hi, welcome home.</h1>
-        <p>Here are some projects you've thought of: </p>
+        <p>These projects are in your current Project Cloud: </p>
         <Projects />
     </div>
 )

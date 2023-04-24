@@ -3,7 +3,7 @@ import React from 'react'
 function DataCards(){
 
 return(
-    <div className ="data-display">
+    <div className ="card">
     </div>
 )
 

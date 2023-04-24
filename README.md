@@ -10,6 +10,8 @@ Project Cloud is conncet
 > npm start 
 //connect to json database server-- we are already using port 3000 for our react server
 > npx json-server --watch data/db.json --port 8000
+install react router
+>npm install react-router-dom 
 
 ### Usage Visuals
 TBD
@@ -25,7 +27,7 @@ Licensing is not being offered at this time. For any questions, please reach out
 
 ### Acknowledgement
 Thank you to api.publickapis.org for their compiled list of APIs that is heavily used in this app. https://api.publicapis.org/entries
-
+![Alt text](https://i.pinimg.com/564x/dd/2d/9b/dd2d9b6c53db92f2051e91936a4110a4.jpg)
 ### Support
 For any questions or support, please reach out to katzmansof@gmail.com .
 
