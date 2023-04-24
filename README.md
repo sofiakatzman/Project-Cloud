@@ -4,7 +4,12 @@ Project Cloud is an app that you can use to keep record of all of your project i
 Project Cloud is conncet 
 
 ### Installation 
-TBD ** 
+//install all node dependencies
+> npm install
+//start npm react server
+> npm start 
+//connect to json database server-- we are already using port 3000 for our react server
+> npx json-server --watch data/db.json --port 8000
 
 ### Usage Visuals
 TBD

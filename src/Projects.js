@@ -14,10 +14,10 @@ fetch("http://localhost:8000/projects")
 
 return(
     <div>
-        <div className = "projects">
+        <div className = "card">
             <h3>Project Name</h3>
             <p>Project Description will go here ...</p>
-            <small>API Name : Clickable Link</small><br></br>
+            <small>API Category : Type as Link</small><br></br>
             <button>delete</button>
                    </div>
     </div>

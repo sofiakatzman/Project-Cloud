@@ -28,12 +28,21 @@ text-align: left;
 button {
   border-radius: 10px;
   border-color: white;
-  color: #063C34; 
-  background-color: transparent;
-  
+  color: #9f9f9f; 
+  background-color: #f6f1f1;
 }
 
 div{
   padding: 15px;
 }
 
+.card {
+  text-align:  center;
+  background-color:white;
+  padding: 1rem;
+  width: 20rem;
+  height: 20rem;
+  display: inline-grid;
+  margin: 2rem 2rem;
+  border-radius:10px;
+}
