@@ -19,6 +19,7 @@ Licensing is not being offered at this time. For any questions, please reach out
 ### References
 
 ### Acknowledgement
+Thank you to api.publickapis.org for their compiled list of APIs that is heavily used in this app. https://api.publicapis.org/entries
 
 ### Support
 For any questions or support, please reach out to katzmansof@gmail.com .

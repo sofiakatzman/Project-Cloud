@@ -5,6 +5,13 @@ function Projects(){
 
 return(
     <div>
+        <div className = "projects">
+            <h3>Project Name</h3>
+            <p>Project Description will go here ...</p>
+            <small>API Name : Clickable Link</small><br></br>
+            <button>delete</button>
+            <button>💡</button>
+        </div>
     </div>
 )
 

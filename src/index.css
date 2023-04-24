@@ -1,10 +1,39 @@
 body {
-  margin: 0;
+  margin: 20px;
   font-family: monospace;
-  background-color: #D7E6E4;
+  background-color: #e2e6d7;
+  color: #596D6A;
 }
 
 div.data-display {
-margin: 0;
+margin: 100px;
 background-color: white
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #596D6A;
+  
+  
+}
+
+.projects {
+text-align: left;
+
+}
+
+button {
+  border-radius: 10px;
+  border-color: white;
+  color: #063C34; 
+  background-color: transparent;
+  
+}
+
+div{
+  padding: 15px;
+}
+

@@ -4,7 +4,6 @@ function DataCards(){
 
 return(
     <div className ="data-display">
-
     </div>
 )
 

@@ -1,0 +1,14 @@
+{
+    "projects": [
+      {
+        "id" : 0,
+        "name" : "Sofia's First Project",
+        "description" : "My first project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
+        "apiLink" : "/create",
+        "category" : "data"
+      }
+      
+      
+      
+      
+      ]}
