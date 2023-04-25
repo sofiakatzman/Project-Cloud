@@ -10,6 +10,11 @@ function DataCards(){
         .then(data => setInspo(data.entries))
     }, [])
 
+    function handleIdea(){
+        console.log("idea!")
+        //this will connect to the "create new project" page and will auto fill api data on form ****
+    }
+
 return(
     <div>    
         <h1>Let's find your next project!</h1> 
@@ -22,7 +27,8 @@ return(
             <h1>{api.API}</h1>
             <p>{api.Description}</p>
             <h6><a href = {api.Link}>API Link: {api.API}</a></h6>
-            <small>API Category: {api.Category}</small>
+            <small>API Category: {api.Category}</small> <br></br><br></br>
+            <button onClick ={handleIdea}>💡</button>
             </div>
         )
     })}

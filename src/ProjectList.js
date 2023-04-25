@@ -1,15 +1,32 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 function ProjectList(){
 
+
+    const [projects, setProjects] = useState([])
+    useEffect(() => {
+        fetch("http://localhost:8000/projects")
+        .then(r => r.json())
+        .then(data => {
+            setProjects(data)
+            console.log(data)})
+    }, [])
+
+
+
     return(
         <div>
-        <div className = "card">
-            <h1>Project Name</h1>
-            <p>Project description will go here...</p>
-            
+            { projects.map(project => {
+                return(
+                <div className= "card" key = {project.id}>
+                <h1>{project.name}</h1>
+                <p>{project.description}</p>
+                </div>
+            )
+})}
+
         </div>
-        </div>
+
     )
 
 
