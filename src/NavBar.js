@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 function NavBar({ onChangePage }){
 
     function handleLinkClick(e) {
-            onChangePage(e.target.pathname)
+        //Event Default is Commented out because with it my links wont load (?)
+        // e.preventDefault()
+        onChangePage(e.target.pathname)
+        
     
     }
  

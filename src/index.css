@@ -3,6 +3,8 @@ body {
   font-family: monospace;
   background-color: #d9eef4;
   color: #596D6A;
+  text-align: center;
+
 }
 
 div.data-display {
@@ -38,17 +40,18 @@ button {
 }
 
 div{
-  padding: 15px;
+  padding: 35px;
 }
 
 .card {
-  text-align:  center;
+  text-align:  right;
   background-color:white;
   padding: 1rem;
-  width: 20rem;
-  height: 20rem;
-  display: inline-grid;
+  width: 15rem;
+  height: 18rem;
+  display: right;
   margin: 2rem 2rem;
   border-radius:10px;
+  align-items: flex-start;
 }
 

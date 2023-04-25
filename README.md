@@ -26,13 +26,14 @@ Licensing is not being offered at this time. For any questions, please reach out
 ### References
 
 ### Acknowledgement
-Thank you to api.publickapis.org for their compiled list of APIs that is heavily used in this app. https://api.publicapis.org/entries
-![Alt text](https://i.pinimg.com/564x/dd/2d/9b/dd2d9b6c53db92f2051e91936a4110a4.jpg)
+Thank you to api.publickapis.org for their compiled list of APIs. 
+link : https://api.publicapis.org/entries
+
 ### Support
 For any questions or support, please reach out to katzmansof@gmail.com .
 
 ### Project Status / Personal Notes 
 To Do: 
 ✓ Create 5 Functional Components 
-- Client Side Routing - 3 Minimum Links
+✓ Client Side Routing - 3 Minimum Links
 - Set up One Post Request (send new projects to storage database)
