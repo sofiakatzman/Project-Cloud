@@ -8,8 +8,10 @@ function ApiCards(){
         .then(data => setInspo(data.entries))
     }, [])
 
-    function handleIdea(){
+    function handleIdea(e){
         console.log("idea!")
+        const idea = inspo.filter(data => data.Link === e)
+        console.log(idea)
         //this will connect to the "create new project" page and will auto fill api data on form ****
     }
 
@@ -26,7 +28,7 @@ return(
             <p>{api.Description}</p><br></br>
             <h4>Category: {api.Category}</h4> <br></br>
             <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
-            <button onClick ={handleIdea}>💡</button>
+            <button onClick ={() => handleIdea(api.Link)}>💡</button>
             </div>
         )
     })}
