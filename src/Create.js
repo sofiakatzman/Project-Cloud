@@ -1,5 +1,4 @@
-import React, { useState }from 'react'
-
+import React, { useState } from 'react';
 
 function Create(){
     const [projectName, setProjectName] = useState("")
@@ -7,7 +6,6 @@ function Create(){
     const [apiName, setApiName] = useState("")
     const [apiLink, setApiLink] = useState("")
     const [apiCategory, setApiCategory] = useState("")
-
 
     function updateProjectName(event) {
        setProjectName(event.target.value)
@@ -73,3 +71,13 @@ export default Create
 
 //I need to come back to the category input 
 //I think i want to add a card on the side that updates as the form is filled out...
+
+    // useEffect(() => {
+    //     const { idea } = location.state || {}; // Extract idea from location state
+        
+    //     if (idea) {
+    //       setApiName(idea.API);
+    //       setApiLink(idea.Link);
+    //       setApiCategory(idea.Category);
+    //     }
+    //   }, [location]);

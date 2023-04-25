@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate  } from 'react-router-dom';
-import Create from './Create'
 
 function ApiCards(){
     const [idea, setIdea] = useState([])
@@ -26,7 +25,8 @@ function ApiCards(){
         }
 
         
-            //this will connect to the "create new project" page and will auto fill api data on form ****
+            //this will connect to the "create new project" page and will auto fill api data on form **** 
+            //currently i have the api saved as [idea] -- just need to find out how to move it to Create component 
 
 
 return(
@@ -42,7 +42,7 @@ return(
             <p>{api.Description}</p><br></br>
             <h4>Category: {api.Category}</h4> <br></br>
             <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
-            <button onClick ={() => handleIdea(api.Link)}>💡</button>
+            <button onClick ={() => handleIdea(api.Link)}><span role = "img" aria-label = "lightbulb">💡</span></button>
             </div>
         )
     })}
