@@ -13,8 +13,7 @@ function NavBar({ onChangePage }){
  
     return(
         <nav className="links"> 
-            <Link to="/" onClick={handleLinkClick}>home</Link>
-            <Link to="/projects" onClick={handleLinkClick}>my cloud</Link>
+            <Link to="/" onClick={handleLinkClick}>my cloud</Link>
             <Link to="/create" onClick={handleLinkClick}>new project</Link>
             <Link to="/inspo" onClick={handleLinkClick}>view inspo</Link>
         </nav>

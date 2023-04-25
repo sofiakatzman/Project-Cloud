@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 
 function ProjectList(){
 
-
     const [projects, setProjects] = useState([])
     useEffect(() => {
         fetch("http://localhost:8000/projects")
@@ -11,8 +10,6 @@ function ProjectList(){
             setProjects(data)
             console.log(data)})
     }, [])
-
-
 
     return(
         <div>
