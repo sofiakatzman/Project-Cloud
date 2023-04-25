@@ -49,7 +49,7 @@ div{
   padding: 1rem;
   width: 15rem;
   height: 15rem;
-  display: right;
+  display: inline-grid;
   margin: 2rem 2rem;
   border-radius:10px;
   align-items: flex-start;
