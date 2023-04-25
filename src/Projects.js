@@ -10,7 +10,9 @@ function Projects(){
             setProjects(data)
             console.log(data)})
     }, [])
+
   
+
 return(
     <div> <h1>Welcome to your Projects Cloud! </h1>
     <p>Here are the projects you've saved: 
@@ -22,7 +24,6 @@ return(
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <h6><a href = {project.apiLink}>API Link: {project.apiName}</a></h6><br></br>
-            <button>delete</button>
             </div>
         )
     })}

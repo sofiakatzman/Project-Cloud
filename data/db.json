@@ -9,12 +9,20 @@
       "category": "data"
     },
     {
-      "name": "Ami Test",
-      "description": "Hi ",
-      "apiName": "How Are You",
-      "apiLink": "Hello",
-      "category": null,
-      "id": 1
+      "id": 1,
+      "name": "Sofia's Second Project",
+      "description": "My first project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
+      "apiName": "Test",
+      "apiLink": "/create",
+      "category": "data"
+    },
+    {
+      "id": 2,
+      "name": "Sofia's Third Project",
+      "description": "My first project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
+      "apiName": "Test",
+      "apiLink": "/create",
+      "category": "data"
     }
   ]
 }
