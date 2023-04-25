@@ -20,7 +20,7 @@ return(
 
     {projects.map(project => {
         return(
-        <div className = "card" key = {project.id}> 
+        <div className = "projectCard" key = {project.id}> 
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <h6><a href = {project.apiLink}>API Link: {project.apiName}</a></h6><br></br>

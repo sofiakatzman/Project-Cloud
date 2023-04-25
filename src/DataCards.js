@@ -23,11 +23,11 @@ return(
 
     { inspo.map (api => {
         return(
-            <div className = "card" key={api.Link}>
-            <h1>{api.API}</h1>
+            <div className = "apiCard" key={api.Link}>
+            <h1><a href = {api.Link}>{api.API}</a></h1>
             <p>{api.Description}</p>
-            <h6><a href = {api.Link}>API Link: {api.API}</a></h6>
-            <small>API Category: {api.Category}</small> <br></br><br></br>
+            
+            <small>Category: {api.Category}</small> <br></br><br></br>
             <button onClick ={handleIdea}>💡</button>
             </div>
         )

@@ -5,6 +5,7 @@ function Create(){
     const [projectDescription, setProjectDescription] = useState("")
     const [apiName, setApiName] = useState("")
     const [apiLink, setApiLink] = useState("")
+    const [apiCategory, setApiCategory] = useState("")
 
     function updateProjectName(event) {
        setProjectName(event.target.value)
@@ -22,6 +23,10 @@ function Create(){
         setApiLink(event.target.value)
      }
 
+     function updateApiCategory(event) {
+        setApiCategory(event.target.value)
+     }
+
      function handleAdd(e) {
         e.preventDefault()
         const newProject = {
@@ -29,7 +34,7 @@ function Create(){
             description : projectDescription,
             apiName : apiName,
             apiLink : apiLink,
-            category: null
+            category: apiCategory
         }
 
         fetch("http://localhost:8000/projects", {
@@ -46,24 +51,17 @@ function Create(){
         <div>
             <h1>Let's Add a Project!</h1>
             <p>Fill out the fields below to add your project to the cloud. </p> 
-            <div className = "card">
-                <form><label>Project Name: </label>
+            <div className = "createCard">
+                <form><label>Project Name: </label><br></br><br></br>
                     <input type = "text" value = {projectName} onChange={updateProjectName}/> <br></br><br></br>
-                    <label>Project Description: </label>
+                    <label>Project Description: </label><br></br><br></br>
                     <input type = "text" value = {projectDescription} onChange={updateProjectDescription}/><br></br><br></br>
-                    <label>Project API Name: </label>
+                    <label>Project API Name: </label><br></br><br></br>
                     <input type = "text" value = {apiName} onChange={updateApiName}/> <br></br><br></br>
-                    <label>Project API Link: </label>
+                    <label>Project API Link: </label><br></br><br></br>
                     <input type = "text" value = {apiLink} onChange={updateApiLink}/> <br></br><br></br>
-                    <label>Project Category: </label><br></br>
-                    <select> 
-                        <option value = "null">-</option>
-                        <option value = "animals">Animals </option>
-                        <option value = "anime">Anime </option>
-                        <option value = "anti-malware">Anti-Malware</option>
-                        <option value = "art-and-design">Art & Design</option>
-                        <option value = "blockchain">Blockchain</option>
-                    </select> <br></br><br></br><br></br>
+                    <label>Project Category: </label><br></br><br></br>
+                    <input type = "text" value = {apiCategory} onChange={updateApiCategory}/> <br></br><br></br>
                     <button onClick={handleAdd}>Add Project</button>
                 </form></div>
         </div>
