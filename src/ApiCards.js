@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate  } from 'react-router-dom';
+import Create from './Create'
 
 function ApiCards(){
+    const [idea, setIdea] = useState([])
     const [inspo, setInspo] = useState([])
+    const history = useNavigate ()
+
+
     useEffect(() => {
         fetch("https://api.publicapis.org/entries")
         .then(r => r.json())
@@ -10,10 +16,18 @@ function ApiCards(){
 
     function handleIdea(e){
         console.log("idea!")
-        const idea = inspo.filter(data => data.Link === e)
-        console.log(idea)
-        //this will connect to the "create new project" page and will auto fill api data on form ****
-    }
+        const foundIdea = inspo.filter(data => data.Link === e)
+        setIdea(foundIdea)
+       
+        history({
+            pathname: '/create',
+            state: { idea: foundIdea }
+          });
+        }
+
+        
+            //this will connect to the "create new project" page and will auto fill api data on form ****
+
 
 return(
     <div>    
@@ -35,5 +49,4 @@ return(
     </div>
 )
 }
-
 export default ApiCards
