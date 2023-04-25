@@ -4,7 +4,6 @@ body {
   background-color: #d9eef4;
   color: #8a9e9b;
   text-align: center;
-
 }
 
 div.data-display {
@@ -18,27 +17,19 @@ background-color: white
   justify-content: space-between;
   font-size: 16px;
   color: #596D6A;
-  
-  
-}
-
-
-
+ }
 
 a {
   color: #76939b;
   text-decoration:none
 }
 
-
 a:hover {
   color: #43454a;
-
 }
 
 .projects {
 text-align: left;
-
 }
 
 button {
@@ -85,9 +76,7 @@ div{
   display: inline-grid;
   margin: 2rem 2rem;
   border-radius:10px;
-
 }
-
 
 .createCard {
   text-align:  center;
