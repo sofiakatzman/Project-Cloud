@@ -2,7 +2,7 @@ body {
   margin: 20px;
   font-family: monospace;
   background-color: #d9eef4;
-  color: #596D6A;
+  color: #8a9e9b;
   text-align: center;
 
 }
@@ -22,9 +22,18 @@ background-color: white
   
 }
 
+
+
+
 a {
   color: #76939b;
   text-decoration:none
+}
+
+
+a:hover {
+  color: #43454a;
+
 }
 
 .projects {
@@ -36,11 +45,11 @@ button {
   border-radius: 10px;
   border-color: white;
   color: #9f9f9f; 
-  background-color: #f6f1f1;
+  background-color: #e6eff6;
 }
 
 div{
-  padding: 35px;
+  padding: 10px;
 }
 
 .card {
@@ -56,8 +65,8 @@ div{
 }
 
 .apiCard {
-  text-align:  right;
-  background-color:rgb(255, 255, 255);
+  text-align:  center;
+  background-color:rgb(245, 254, 255);
   padding: 1rem;
   width: 12rem;
   height: 15rem;
@@ -76,6 +85,7 @@ div{
   display: inline-grid;
   margin: 2rem 2rem;
   border-radius:10px;
+
 }
 
 
@@ -84,7 +94,7 @@ div{
   background-color:white;
   padding: 1rem;
   width: 30rem;
-  height: 23rem;
+  height: 20 rem;
   display: inline-grid;
   margin: 2rem 2rem;
   border-radius:10px;

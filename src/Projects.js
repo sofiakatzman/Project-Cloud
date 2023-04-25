@@ -23,7 +23,9 @@ return(
         <div className = "projectCard" key = {project.id}> 
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            <h6><a href = {project.apiLink}>API Link: {project.apiName}</a></h6><br></br>
+            <small><b>category:</b>{project.category}</small>
+            <small><a href = {project.apiLink}>{project.apiName} Link</a></small>
+           
             </div>
         )
     })}

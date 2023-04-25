@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function DataCards(){
-    console.log("you've reached DataCards")
-
+function ApiCards(){
     const [inspo, setInspo] = useState([])
     useEffect(() => {
         fetch("https://api.publicapis.org/entries")
@@ -25,9 +23,9 @@ return(
         return(
             <div className = "apiCard" key={api.Link}>
             <h1><a href = {api.Link}>{api.API}</a></h1>
-            <p>{api.Description}</p>
-            
-            <small>Category: {api.Category}</small> <br></br><br></br>
+            <p>{api.Description}</p><br></br>
+            <h4>Category: {api.Category}</h4> <br></br>
+            <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
             <button onClick ={handleIdea}>💡</button>
             </div>
         )
@@ -36,4 +34,4 @@ return(
 )
 }
 
-export default DataCards
+export default ApiCards

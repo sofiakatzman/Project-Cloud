@@ -43,8 +43,6 @@ function Create(){
             body: JSON.stringify(newProject)
         })
         .then(() => console.log("added!"))
-
-
      }
     
     return(
@@ -54,15 +52,15 @@ function Create(){
             <div className = "createCard">
                 <form><label>Project Name: </label><br></br><br></br>
                     <input type = "text" value = {projectName} onChange={updateProjectName}/> <br></br><br></br>
-                    <label>Project Description: </label><br></br><br></br>
+                    <label>Project Description: </label> <br></br><br></br>
                     <input type = "text" value = {projectDescription} onChange={updateProjectDescription}/><br></br><br></br>
-                    <label>Project API Name: </label><br></br><br></br>
+                    <label>Project API Name: </label> <br></br><br></br>
                     <input type = "text" value = {apiName} onChange={updateApiName}/> <br></br><br></br>
-                    <label>Project API Link: </label><br></br><br></br>
+                    <label>Project API Link: </label> <br></br><br></br>
                     <input type = "text" value = {apiLink} onChange={updateApiLink}/> <br></br><br></br>
-                    <label>Project Category: </label><br></br><br></br>
+                     <label>Project Category: </label> <br></br><br></br>
                     <input type = "text" value = {apiCategory} onChange={updateApiCategory}/> <br></br><br></br>
-                    <button onClick={handleAdd}>Add Project</button>
+                    <button onClick={handleAdd}>Add Project</button><br></br><br></br>
                 </form></div>
         </div>
     )
