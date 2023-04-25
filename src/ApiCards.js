@@ -6,7 +6,6 @@ function ApiCards(){
     const [inspo, setInspo] = useState([])
     const history = useNavigate ()
 
-
     useEffect(() => {
         fetch("https://api.publicapis.org/entries")
         .then(r => r.json())
@@ -23,8 +22,6 @@ function ApiCards(){
             state: { idea: foundIdea }
           });
         }
-
-        
             //this will connect to the "create new project" page and will auto fill api data on form **** 
             //currently i have the api saved as [idea] -- just need to find out how to move it to Create component 
 

@@ -11,25 +11,21 @@ function Projects(){
             console.log(data)})
     }, [])
 
-  
+    return(
 
-return(
-    <div> <h1>Welcome to your Projects Cloud! </h1>
-    <p>Here are the projects you've saved: 
-    </p>
-
-    {projects.map(project => {
-        return(
-        <div className = "projectCard" key = {project.id}> 
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <small><b>category:</b>{project.category}</small>
-            <small><a href = {project.apiLink}>{project.apiName} Link</a></small>
-           
-            </div>
-        )
-    })}
-    </div>
+        <div> <h1>Welcome to your Projects Cloud! </h1>
+        <p>Here are the projects you've saved:  </p>
+        {projects.map(project => {
+            return(
+            <div className = "projectCard" key = {project.id}> 
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <small><b>category:</b>{project.category}</small>
+                <small><a href = {project.apiLink}>{project.apiName} Link</a></small>
+                </div>
+            )
+        })}
+        </div>
 )
 
 }

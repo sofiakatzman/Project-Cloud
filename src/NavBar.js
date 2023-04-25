@@ -6,9 +6,7 @@ function NavBar({ onChangePage }){
     function handleLinkClick(e) {
         //Event Default is Commented out because with it my links wont load (?)
         // e.preventDefault()
-        onChangePage(e.target.pathname)
-        
-    
+        onChangePage(e.target.pathname)  
     }
  
     return(
@@ -17,8 +15,6 @@ function NavBar({ onChangePage }){
             <Link to="/create" onClick={handleLinkClick}>new project</Link>
             <Link to="/inspo" onClick={handleLinkClick}>view inspo</Link>
         </nav>
-    
-    
 )}
 
 export default NavBar
