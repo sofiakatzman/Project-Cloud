@@ -36,4 +36,7 @@ For any questions or support, please reach out to katzmansof@gmail.com .
 To Do: 
 ✓ Create 5 Functional Components 
 ✓ Client Side Routing - 3 Minimum Links
-- Set up One Post Request (send new projects to storage database)
+✓ Set up One Post Request (send new projects to storage database)
+
+Bonus: 
+- Connect API button to New Project Form so that API info auto fills when creating new project 
