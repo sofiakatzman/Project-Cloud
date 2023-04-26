@@ -1,19 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function NavBar({ onChangePage }){
+function NavBar(){
 
-    function handleLinkClick(e) {
-        //Event Default is Commented out because with it my links wont load (?)
-        // e.preventDefault()
-        onChangePage(e.target.pathname)  
-    }
- 
     return(
         <nav className="links"> 
-            <Link to="/" onClick={handleLinkClick}>my cloud</Link>
-            <Link to="/create" onClick={handleLinkClick}>new project</Link>
-            <Link to="/inspo" onClick={handleLinkClick}>view inspo</Link>
+            <Link to="/">my cloud</Link>
+            <Link to="/create">new project</Link>
+            <Link to="/inspo">view inspo</Link>
         </nav>
 )}
 

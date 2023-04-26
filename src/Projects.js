@@ -13,8 +13,8 @@ function Projects(){
 
     return(
 
-        <div> <h1>Welcome to your Projects Cloud! </h1>
-        <p>Here are the projects you've saved:  </p>
+        <div> <h1>Welcome to your Project Cloud! </h1>
+        <p>Here are the projects you've thought of:  </p>
         {projects.map(project => {
             return(
             <div className = "projectCard" key = {project.id}> 

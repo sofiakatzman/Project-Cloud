@@ -12,15 +12,12 @@ function ApiCards(){
         .then(data => setInspo(data.entries))
     }, [])
 
-    function handleIdea(e){
+    function handleIdea(link){
         console.log("idea!")
-        const foundIdea = inspo.filter(data => data.Link === e)
+        const foundIdea = inspo.find(item => item.Link === link)
         setIdea(foundIdea)
        
-        history({
-            pathname: '/create',
-            state: { idea: foundIdea }
-          });
+        history(`/create/${foundIdea.Link}`);
         }
             //this will connect to the "create new project" page and will auto fill api data on form **** 
             //currently i have the api saved as [idea] -- just need to find out how to move it to Create component 
@@ -39,7 +36,7 @@ return(
             <p>{api.Description}</p><br></br>
             <h4>Category: {api.Category}</h4> <br></br>
             <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
-            <button onClick ={() => handleIdea(api.Link)}><span role = "img" aria-label = "lightbulb">💡</span></button>
+            <button onClick ={(e) => handleIdea(api.Link)}><span role = "img" aria-label = "lightbulb">💡</span></button>
             </div>
         )
     })}
@@ -47,3 +44,7 @@ return(
 )
 }
 export default ApiCards
+
+
+
+//change a tag later ** link or navlink
