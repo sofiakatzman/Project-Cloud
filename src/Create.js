@@ -15,31 +15,7 @@ function Create({ idea }){
         
     }, [])
 
-
-
-
-
-    function updateProjectName(event) {
-       setProjectName(event.target.value)
-    }
-
-    function updateProjectDescription(event) {
-        setProjectDescription(event.target.value)
-     }
-    
-     function updateApiName(event) {
-        setApiName(event.target.value)
-     }
-
-     function updateApiLink(event) {
-        setApiLink(event.target.value)
-     }
-
-     function updateApiCategory(event) {
-        setApiCategory(event.target.value)
-     }
-
-     function handleAdd(e) {
+     const handleAdd = (e) => {
         e.preventDefault()
         const newProject = {
             name : projectName,
@@ -63,15 +39,15 @@ function Create({ idea }){
             <p>Fill out the fields below to add your project to the cloud. </p> 
             <div className = "createCard">
                 <form><label>Project Name: </label><br></br><br></br>
-                    <input type = "text" value = {projectName} onChange={updateProjectName}/> <br></br><br></br>
+                    <input type = "text" value = {projectName} onChange={(event)=> setProjectName(event.target.value)}/> <br></br><br></br>
                     <label>Project Description: </label> <br></br><br></br>
-                    <input type = "text" value = {projectDescription} onChange={updateProjectDescription}/><br></br><br></br>
+                    <input type = "text" value = {projectDescription} onChange={(event)=> setProjectDescription(event.target.value)}/><br></br><br></br>
                     <label>Project API Name: </label> <br></br><br></br>
-                    <input type = "text" value = {apiName} onChange={updateApiName}/> <br></br><br></br>
+                    <input type = "text" value = {apiName} onChange={(event)=> setApiName(event.target.value)}/> <br></br><br></br>
                     <label>Project API Link: </label> <br></br><br></br>
-                    <input type = "text" value = {apiLink} onChange={updateApiLink}/> <br></br><br></br>
+                    <input type = "text" value = {apiLink} onChange={(event) => setApiLink(event.target.value)}/> <br></br><br></br>
                      <label>Project Category: </label> <br></br><br></br>
-                    <input type = "text" value = {apiCategory} onChange={updateApiCategory}/> <br></br><br></br>
+                    <input type = "text" value = {apiCategory} onChange={(event) => setApiCategory(event.target.value)}/> <br></br><br></br>
                     <button onClick={handleAdd}>Add Project</button><br></br><br></br>
                 </form></div>
         </div>
