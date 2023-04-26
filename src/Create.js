@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom"
+
 
 
 function Create({ idea }){
@@ -10,8 +12,12 @@ function Create({ idea }){
     
     useEffect(()=> {
         console.log(idea)
-
+        
     }, [])
+
+
+
+
 
     function updateProjectName(event) {
        setProjectName(event.target.value)

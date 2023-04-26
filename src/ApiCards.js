@@ -16,8 +16,10 @@ function ApiCards(){
         console.log("idea!")
         const foundIdea = inspo.find(item => item.Link === link)
         setIdea(foundIdea)
+
+        const apiUrl = foundIdea.Link.slice(30)
        
-        history(`/create/${foundIdea.Link}`);
+        history(`/create/${apiUrl}`);
         }
             //this will connect to the "create new project" page and will auto fill api data on form **** 
             //currently i have the api saved as [idea] -- just need to find out how to move it to Create component 
