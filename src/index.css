@@ -39,6 +39,17 @@ button {
   background-color: #e6eff6;
 }
 
+button.idea {
+  border-radius: 10px;
+  border-color: white;
+  color: #9f9f9f; 
+  background-color: #e6eff6;
+  font-size: 15px;
+  color: transparent;
+  text-shadow: 0 0 0 rgba(36, 43, 83, 0.465);
+}
+
+
 div{
   padding: 10px;
 }

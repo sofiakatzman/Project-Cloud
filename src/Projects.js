@@ -6,15 +6,13 @@ function Projects(){
     useEffect(() => {
         fetch("http://localhost:8000/projects")
         .then(r => r.json())
-        .then(data => {
-            setProjects(data)
-            console.log(data)})
+        .then(data => setProjects(data))
     }, [])
 
     return(
 
         <div> <h1>Welcome to your Project Cloud! </h1>
-        <p>Here are the projects you've thought of:  </p>
+        <p>These are the projects in your cloud:  </p>
         {projects.map(project => {
             return(
             <div className = "projectCard" key = {project.id}> 

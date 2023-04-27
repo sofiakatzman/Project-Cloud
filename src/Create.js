@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-
 function Create(){
     const [projectName, setProjectName] = useState("")
     const [projectDescription, setProjectDescription] = useState("")
     const [apiName, setApiName] = useState("")
     const [apiLink, setApiLink] = useState("")
     const [apiCategory, setApiCategory] = useState("")
-
     const { apiIdea } = useParams()  
     const history = useNavigate()
 
