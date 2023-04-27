@@ -8,24 +8,21 @@ function Create(){
     const [apiLink, setApiLink] = useState("")
     const [apiCategory, setApiCategory] = useState("")
 
-    //apiIdea is = to the url of the selected api element 
     const { apiIdea } = useParams()  
    
     useEffect(()=> {
+       if (apiIdea){
         fetch("https://api.publicapis.org/entries")
             .then(r => r.json())
             .then(data => {
                 const foundIdea = data.entries.find(item => item.API === apiIdea)
-                console.log(foundIdea)
                 setApiName(foundIdea.API)
                 setApiLink(foundIdea.Link)
                 setApiCategory(foundIdea.Category)
-            })
+            })}
     }, [])
 
-
-
-     const handleAdd = (e) => {
+    const handleAdd = (e) => {
         e.preventDefault()
         const newProject = {
             name : projectName,
@@ -66,16 +63,3 @@ function Create(){
 
 
 export default Create
-
-//I need to come back to the category input 
-//I think i want to add a card on the side that updates as the form is filled out...
-
-    // useEffect(() => {
-    //     const { idea } = location.state || {}; // Extract idea from location state
-        
-    //     if (idea) {
-    //       setApiName(idea.API);
-    //       setApiLink(idea.Link);
-    //       setApiCategory(idea.Category);
-    //     }
-    //   }, [location]);

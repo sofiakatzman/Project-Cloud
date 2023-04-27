@@ -13,31 +13,12 @@ function ApiCards(){
         .then(data => setInspo(data.entries))
     }, [])
 
-
     function handleIdea(apiName){
         setIdea(apiName)
         history(`/create/${apiName}`)
-       
-       
+    }
 
-
-
-
-
-        // console.log("idea!")
-        // const foundIdea = inspo.find(item => item.API === apiName)
-        // setIdea(foundIdea)
-        
-        // const apiUrl = foundIdea.API
-        // history(`/create/${apiUrl}`)
-
-
-
-
-        }
-            //this will connect to the "create new project" page and will auto fill api data on form **** 
-            //currently i have the api saved as [idea] -- just need to find out how to move it to Create component 
-return(
+    return(
     <div>    
         <h1>Let's find your next project!</h1> 
         <p>Take a look at the api's below! <br></br> 
@@ -50,7 +31,7 @@ return(
             <p>{api.Description}</p><br></br>
             <h4>Category: {api.Category}</h4> <br></br>
             <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
-            <button onClick ={(e) => handleIdea(api.API)}><span role = "img" aria-label = "lightbulb">💡</span></button>
+            <button onClick={(e) => handleIdea(api.API)}><span role="img" aria-label="lightbulb">💡</span></button>
             </div>
         )
     })}
