@@ -10,8 +10,7 @@ function Create(){
 
     //apiIdea is = to the url of the selected api element 
     const { apiIdea } = useParams()  
-    console.log(apiIdea) 
-
+    console.log(apiIdea)
     useEffect(()=> {
        console.log(apiIdea)
 

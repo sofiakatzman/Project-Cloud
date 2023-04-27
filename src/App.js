@@ -16,7 +16,7 @@ function App() {
     <div>
       <NavBar onChangePage={handleChangePage} />
       <Routes>
-        <Route exact path="/create" element={<Create />} />
+        <Route path="/create" element={<Create />} />
         <Route path="/create/:apiIdea" element={<Create />} />
         <Route path="/inspo" element={<ApiCards />} />
         <Route path="/" element={<Projects />} />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate, useParams  } from 'react-router-dom';
+
 
 function ApiCards(){
     const [idea, setIdea] = useState([])
@@ -12,14 +13,15 @@ function ApiCards(){
         .then(data => setInspo(data.entries))
     }, [])
 
-    function handleIdea(link){
-        console.log("idea!")
-        const foundIdea = inspo.find(item => item.Link === link)
-        setIdea(foundIdea)
 
-        const apiUrl = foundIdea.Link.slice(8)
-       
+    function handleIdea(apiName){
+        console.log("idea!")
+        const foundIdea = inspo.find(item => item.API === apiName)
+        setIdea(foundIdea)
+        
+        const apiUrl = foundIdea.API
         history(`/create/${apiUrl}`)
+       
        
         }
             //this will connect to the "create new project" page and will auto fill api data on form **** 
@@ -37,7 +39,7 @@ return(
             <p>{api.Description}</p><br></br>
             <h4>Category: {api.Category}</h4> <br></br>
             <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
-            <button onClick ={(e) => handleIdea(api.Link)}><span role = "img" aria-label = "lightbulb">💡</span></button>
+            <button onClick ={(e) => handleIdea(api.API)}><span role = "img" aria-label = "lightbulb">💡</span></button>
             </div>
         )
     })}
