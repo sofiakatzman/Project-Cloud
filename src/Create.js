@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+
 
 function Create(){
     const [projectName, setProjectName] = useState("")
@@ -9,7 +10,8 @@ function Create(){
     const [apiCategory, setApiCategory] = useState("")
 
     const { apiIdea } = useParams()  
-   
+    const history = useNavigate()
+
     useEffect(()=> {
        if (apiIdea){
         fetch("https://api.publicapis.org/entries")
@@ -43,7 +45,9 @@ function Create(){
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(newProject)
         })
-        .then(() => console.log("added!"))
+        .then(() => {
+            history('/')
+        })
      }
 
 
