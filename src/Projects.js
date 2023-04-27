@@ -10,7 +10,6 @@ function Projects(){
     }, [])
 
     return(
-
         <div> <h1>Welcome to your Project Cloud! </h1>
         <p>These are the projects in your cloud:  </p>
         {projects.map(project => {
@@ -19,7 +18,7 @@ function Projects(){
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <small><b>category:</b>{project.category}</small>
-                <small><a href = {project.apiLink}>{project.apiName} Link</a></small>
+                <small><a href = {project.apiLink}>{project.apiName} Api Link</a></small>
                 </div>
             )
         })}
