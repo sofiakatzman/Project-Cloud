@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate, Link  } from 'react-router-dom';
+
 
 function ApiCards(){
     const [idea, setIdea] = useState([])
@@ -26,7 +27,7 @@ function ApiCards(){
     { inspo.map (api => {
         return(
             <div className = "apiCard" key={api.Link}>
-            <h1><a href = {api.Link}>{api.API}</a></h1>
+            <h1><Link to = {api.Link}>{api.API}</Link></h1>
             <p>{api.Description}</p><br></br>
             <h4>Category: {api.Category}</h4> <br></br>
             <small>Auth ? {api.Auth ? api.Auth : "n/a"}</small>
