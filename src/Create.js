@@ -22,6 +22,12 @@ function Create(){
             })}
     }, [])
 
+    const handleReset = () => {
+        setApiName("")
+        setApiLink("")
+        setApiCategory("")
+    }
+
     const handleAdd = (e) => {
         e.preventDefault()
         const newProject = {
@@ -39,6 +45,9 @@ function Create(){
         })
         .then(() => console.log("added!"))
      }
+
+
+  
     
     return(
         <div>
@@ -57,6 +66,7 @@ function Create(){
                     <input type = "text" value = {apiCategory} onChange={(event) => setApiCategory(event.target.value)}/> <br></br><br></br>
                     <button onClick={handleAdd}>Add Project</button><br></br><br></br>
                 </form></div>
+                <button onClick={handleReset}>X</button>
         </div>
     )
 }
