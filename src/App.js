@@ -20,7 +20,6 @@ function App() {
         <Route path="/create/:apiIdea" element={<Create />} />
         <Route path="/inspo" element={<ApiCards />} />
         <Route path="/" element={<Projects />} />
-
       </Routes>
     </div>
   );

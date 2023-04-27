@@ -19,7 +19,7 @@ function ProjectList(){
                 <p>{project.description}</p>
                 </div>
             )
-})}
+            })}
 
         </div>
 

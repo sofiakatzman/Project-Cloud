@@ -23,6 +23,14 @@
       "apiLink": "https://documenter.getpostman.com/view/664302/S1ENwy59",
       "category": "Animals",
       "id": 2
+    },
+    {
+      "name": "RandoWallpaper",
+      "description": "App that gives you a random wallpaper -- studio ghibli style ",
+      "apiName": "Studio Ghibli",
+      "apiLink": "https://ghibliapi.herokuapp.com",
+      "category": "Anime",
+      "id": 3
     }
   ]
 }
