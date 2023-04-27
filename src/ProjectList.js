@@ -7,8 +7,7 @@ function ProjectList(){
         fetch("http://localhost:8000/projects")
         .then(r => r.json())
         .then(data => {
-            setProjects(data)
-            console.log(data)})
+            setProjects(data)})
     }, [])
 
     return(

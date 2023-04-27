@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom"
+import { useParams } from 'react-router-dom';
 
-
-
-function Create({ idea }){
+function Create(){
     const [projectName, setProjectName] = useState("")
     const [projectDescription, setProjectDescription] = useState("")
     const [apiName, setApiName] = useState("")
     const [apiLink, setApiLink] = useState("")
     const [apiCategory, setApiCategory] = useState("")
-    
+
+    //apiIdea is = to the url of the selected api element 
+    const { apiIdea } = useParams()  
+    console.log(apiIdea) 
+
     useEffect(()=> {
-        console.log(idea)
-        
+       console.log(apiIdea)
+
     }, [])
 
      const handleAdd = (e) => {
