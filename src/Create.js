@@ -10,11 +10,20 @@ function Create(){
 
     //apiIdea is = to the url of the selected api element 
     const { apiIdea } = useParams()  
-    console.log(apiIdea)
+   
     useEffect(()=> {
-       console.log(apiIdea)
-
+        fetch("https://api.publicapis.org/entries")
+            .then(r => r.json())
+            .then(data => {
+                const foundIdea = data.entries.find(item => item.API === apiIdea)
+                console.log(foundIdea)
+                setApiName(foundIdea.API)
+                setApiLink(foundIdea.Link)
+                setApiCategory(foundIdea.Category)
+            })
     }, [])
+
+
 
      const handleAdd = (e) => {
         e.preventDefault()

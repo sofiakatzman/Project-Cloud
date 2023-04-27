@@ -1,36 +1,28 @@
 {
   "projects": [
     {
-      "id": 0,
-      "name": "Sofia's First Project",
-      "description": "My first project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
-      "apiName": "Test",
-      "apiLink": "/create",
-      "category": "data"
+      "name": "Dog Shelter Website ",
+      "description": "Use this to display errors for the Dog Shelter Website I am working on. ",
+      "apiName": "HTTP Dog",
+      "apiLink": "https://http.dog/",
+      "category": "Animals",
+      "id": 0
     },
     {
-      "id": 1,
-      "name": "Sofia's Second Project",
-      "description": "My second project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
-      "apiName": "Test",
-      "apiLink": "/create",
-      "category": "data"
+      "name": "PetFinder",
+      "description": "Petfinder is dedicated to helping pets find homes, another resource to get pets adopted.",
+      "apiName": "Petfinder",
+      "apiLink": "https://www.petfinder.com/developers/",
+      "category": "Animals",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Sofia's Third Project",
-      "description": "My third project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
-      "apiName": "Test",
-      "apiLink": "/create",
-      "category": "data"
-    },
-    {
-      "id": 3,
-      "name": "Sofia's Fourth Project",
-      "description": "My fourth project is an app that will hold a list of project ideas on a server. It will also have access to apis so that users can easily decide on future project ideas!",
-      "apiName": "Test",
-      "apiLink": "/create",
-      "category": "data"
+      "name": "BirdTag",
+      "description": "Create social app to tag where you've spotted certain birds.",
+      "apiName": "eBird",
+      "apiLink": "https://documenter.getpostman.com/view/664302/S1ENwy59",
+      "category": "Animals",
+      "id": 2
     }
   ]
 }
