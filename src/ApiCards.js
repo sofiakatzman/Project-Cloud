@@ -13,7 +13,7 @@ function ApiCards(){
         .then(data => setInspo(data.entries))
     }, [])
 
-    function handleIdea(apiName){
+    const handleIdea = (apiName) => {
         setIdea(apiName)
         history(`/create/${apiName}`)
     }
