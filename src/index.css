@@ -100,6 +100,12 @@ div{
   border-radius:10px;
 }
 
+.createCard form label,
+.createCard form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
 input[type='text']{
     width: 100%;
 }
