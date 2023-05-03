@@ -17,7 +17,7 @@ function Projects(){
             <div className = "projectCard" key = {project.id}> 
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
-                <small><b>category:</b>{project.category}</small>
+                <small><b>category: </b>{project.category}</small>
                 <small><a href = {project.apiLink}>{project.apiName} Api Link</a></small>
                 </div>
             )
