@@ -9,7 +9,7 @@ function NavBar(){
         <nav className="links"> 
             <Link to="/">{cloud} my cloud {cloud}</Link>
             <Link to="/create">{cloud} new project {cloud}</Link>
-            <Link to="/inspo">{cloud} view inspo {cloud}</Link>
+            <Link to="/apis">{cloud} view inspo {cloud}</Link>
         </nav>
 )}
 

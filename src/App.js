@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/create" element={<Create />} />
         <Route path="/create/:apiIdea" element={<Create />} />
-        <Route path="/inspo" element={<Apis />} />
+        <Route path="/apis" element={<Apis />} />
         <Route path="/" element={<Projects />} />
       </Routes>
     </div>

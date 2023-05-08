@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
 
-function Projects(){
+function Projects() {
 
     const [projects, setProjects] = useState([])
 
@@ -26,7 +26,6 @@ function Projects(){
             })}
         </div>
     )
-
 }
 
 export default Projects
