@@ -24,7 +24,7 @@ function ApiCards(){
         <p>Take a look at the API's below! When one sparks an idea, click the lightbulb icon to add your new project idea to your cloud! </p>
         
 
-    { inspo.map (api => {
+    {inspo.map (api => {
         return(
             <div className = "apiCard" key={api.Link}>
             <h1><Link to = {api.Link}>{api.API}</Link></h1>
