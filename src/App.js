@@ -1,24 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
 import Create from './Create';
 import Projects from './Projects';
-import ApiCards from './ApiCards';
+import Apis from './Apis';
 
 function App() {
-
-  const [page, setPage] = useState('/');
-  const handleChangePage = (pathname) => {
-    setPage(pathname);
-  }
-
   return (
     <div>
-      <NavBar onChangePage={handleChangePage} />
+      <NavBar />
       <Routes>
         <Route path="/create" element={<Create />} />
         <Route path="/create/:apiIdea" element={<Create />} />
-        <Route path="/inspo" element={<ApiCards />} />
+        <Route path="/inspo" element={<Apis />} />
         <Route path="/" element={<Projects />} />
       </Routes>
     </div>
