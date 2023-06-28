@@ -40,12 +40,3 @@ link : https://api.publicapis.org/entries
 
 ### Support
 For any questions or support, please reach out to katzmansof@gmail.com .
-
-### Project Requirements 
-To Do: <br />
-✓ Create 5 Functional Components <br />
-✓ Client Side Routing - 3 Minimum Links + Navigation Bar<br />
-✓ Set up One Post Request (send new projects to storage database)
-
-Bonus: <br />
-✓ Connect API button to New Project Form so that API info auto fills when creating new project 
